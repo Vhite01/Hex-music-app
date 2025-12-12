@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hex Music - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Welcome to Hex Music</h2>
+
+<div id="user-info"></div>
+
+<h3>Trending Songs</h3>
+<div id="trending"></div>
+
+<h3>Your Playlist</h3>
+<div id="playlist"></div>
+
+<h3>Upload Song</h3>
+<input type="file" id="uploadFile">
+<button onclick="uploadSong()">Upload</button>
+
+<audio id="player" controls></audio>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-storage.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
